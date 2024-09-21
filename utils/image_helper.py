@@ -4,7 +4,6 @@ import face_recognition
 class ImageHelper:
 
     staticmethod
-
     def face_detector_helper(user_face, input_face_image):
         user_image = face_recognition.load_image_file(user_face)
         input_image = face_recognition.load_image_file(input_face_image)
