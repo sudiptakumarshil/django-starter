@@ -1,0 +1,10 @@
+{% if error %}
+  <p style="text-align: center; color: red;">{{ error }}</p>
+{% endif %}
+
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  <input type="text" name="username" placeholder="Username" required />
+  <input type="file" name="input_image" required />
+  <button type="submit">Login</button>
+</form>
