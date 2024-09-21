@@ -1,11 +1,11 @@
 import face_recognition
 
 
-class Helper:
+class ImageHelper:
 
     staticmethod
 
-    def match_face(user_face, input_face_image):
+    def face_detector_helper(user_face, input_face_image):
         user_image = face_recognition.load_image_file(user_face)
         input_image = face_recognition.load_image_file(input_face_image)
 
